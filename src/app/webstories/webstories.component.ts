@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import {
   NgxStoriesComponent,
   NgxStoriesOptions,
@@ -8,7 +9,7 @@ import {
   selector: 'app-webstories',
   templateUrl: './webstories.component.html',
   styleUrls: ['./webstories.component.css'],
-  imports: [NgxStoriesComponent],
+  imports: [NgxStoriesComponent, RouterLink],
 })
 export class WebstoriesComponent {
   installIcon: string = 'assets/images/copy.png';
